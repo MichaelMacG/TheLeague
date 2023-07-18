@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+.container, .opening {
+    background-color: #393646;
+    margin: 130px 10px 0px 10px;
+}
+.home-bar {
+    width: 100%;
+}
+.opening-para{
+    grid-area: 2/2/3/3;
+    flex:1;
+}
+
+.picture-one {
+    grid-area: 2/1/3/2;
+    display: flex;
+    flex:1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.picture-two {
+    grid-area: 2/3/3/4;
+    display: flex;
+    flex:1;
+    margin-right: 20px;
+   
+}
+
+.home {
+    text-align: center;
+}
+.title.home, .para-one.contact  {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.social-container {
+    margin-top: 0px;
+}
+         
+
+@media (max-width: 760px){
+        .opening-para  > h1, .container div> p {
+        font-size: 1rem
+        }
+
+.opening-para  > p , .container div> p {
+        font-size: .8rem
+}
+}
+@media (max-width:600px) {
+        .social-container{
+            flex-direction: column;
+        }
+    }
+@media (max-width:400px){
+    .container{
+        width: 440px;
+    }
+
+    }
+
+
+    </style>
+    
+</head>
+<body>
+        <div class="home-bar">
+            <navbar>
+                <ul class="nav-list">
+                    <li class="nav-items"> <a href="../index.html"><img id="small-logo" src="../assets/images/logo.png" ></a></li>
+                    <li class="nav-items"><a href="../index.html">Welcome to the League</a></li>
+                    <li class="nav-items"><a href="./contact.html">Contact the League</a></li>
+                    <li class="nav-items"><a href="./about.html">About the League</a></li>
+                    <li class="nav-items"><a href="./portfolio.html">Portfolio</a></li>
+                    <li class="nav-items"><a href="./join.html">Join the League</a> </li>
+                </ul>
+            </navbar>
+        </div>
+                                            
+        <div class="container opener">
+            <div class="work-in-progress">
+                <p class="working-on-it"> Unfortunately, this page is not fully functional just yet, but we are working on it</p>
+            </div>
+            <div class="opening-para">
+                <h1 id="join-title"> Thinking of Joining the League?</h1>
+                <p id="para-one contact"> Here at the League of Extraordinary Coders we are looking to grow and expand everything we do. We look at problem solving as well as the need to learn from people with different perspectives on a regular basis.</p>
+                <p id="para-two contact"> At the moment the League is small but full of dedicated and commited learners who want to grasp the knowledge of Coding and are constantly looking for ways to excel in their ambitions to be Web Developers</p>
+                <p ><a href="./construction.html">Please click here to Join</a></p>
+            </div>
+            <div class="picture-one"><img class="first-pic" src="../assets/images/thumbs-up.png"></div>
+            <div class="picture-two"><img class="large-logo" src="../assets/images/logo.png"></div>
+        </div>
+
+    <div class="social-container">
+        <div class="social-media twitter">
+            <div class="twiiter-text"><h2>Follow us on Twitter</h2></div>
+            <div class="twitter-image"><a href="./construction.html"><img id="twitter-pic" src="../assets/images/twitter.png"> </a></div>
+        </div>
+        <div class="social-media instagram">
+            <div class="instagram-text"><h2>Follow us on Instagram</h2></div>
+            <div class="instagram-image"><a href="./construction.html"><img id="insta-pic" src="../assets/images/instagram.png" ></a></div>
+        </div>
+        <div class="social-media linkedin">
+            <div class="linkedin-text"><h2>Follow us on LinkedIn</h2></div>
+            <div class="linkedin-image"> <a href="./construction.html"><img id="linked-pic" src="../assets/images/linkedin.png"></a></div>
+        </div>
+    </div>
+    <br />
+    <footer class="footer"> ©Copyright Michael Macgregor 2023 | Images used are in collaboration with open and free source software. Please note: Awards and details are fictional for the purpose of study material.</footer>
+    <br />
+    
+</body>
+</html>

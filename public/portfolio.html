@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+.container{
+    background-color: #393646;
+    margin-top: 130px;
+    margin: 130px 10px 0px 10px;
+}
+
+.home-bar {
+    width: 100%;
+}
+
+.opening-para{
+    grid-area: 2/2/3/3;
+    flex: 1;
+}
+
+.picture-one {
+    grid-area: 2/1/3/2;
+    display: flex;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.picture-two {
+    grid-area: 2/3/3/4;
+    display: flex;
+    flex: 1;
+    margin-right: 20px;
+   
+}
+.home {
+    text-align: center;
+}
+.title.home, .para-one.contact  {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.social-container {
+    margin-top: 0px;
+}
+
+@media (max-width: 670px){
+        .opening-para  > h1, .container div> p {
+        font-size: 1rem
+        }
+
+.opening-para  > p , .container div> p {
+        font-size: .8rem
+}
+}
+@media (max-width:600px) {
+        .social-container{
+            flex-direction: column;
+        }
+    }
+@media (max-width:400px){
+    .container{
+        width: 440px;
+    }
+
+    }
+
+    </style>
+    
+</head>
+<body>
+    <div class="home-bar">
+        <navbar>
+            <ul class="nav-list">
+                <li class="nav-items"> <a href="../index.html"><img id="small-logo" src="../assets/images/logo.png" ></a></li>
+                <li class="nav-items"><a href="../index.html">Welcome to the League</a></li>
+                <li class="nav-items"><a href="./contact.html">Contact the League</a></li>
+                <li class="nav-items"><a href="./about.html">About the League</a></li>
+                <li class="nav-items"><a href="./portfolio.html">Portfolio</a></li>
+                <li class="nav-items"><a href="./join.html">Join the League</a> </li>
+            </ul>
+        </navbar>
+    </div>
+                                            
+        <div class="container opener">
+                <div class="work-in-progress">
+                    <p class="working-on-it"> We have nothing to showcase at the moment but we are working on this!!</p>
+                </div>
+                <div class="opening-para">
+                    <h1> What Have The League Done So Far? <br /> and What are their Upcoming Projects?</h1>
+                    <p id="contact-one"> Currently we have done diddly-squat! But watch this space.. we will make sure our ongoing projects are listed while working through them and showcase the brilliant work once completed</p>
+                </div>
+            <div class="picture-one"><img class="first-pic" src="../assets/images/diddly.jpg" alt="diddly-squat Farms"></div>
+            <div class="picture-two"><img class="large-logo" src="../assets/images/logo.png"></div>
+        </div>
+    
+  <div class="social-container">
+    <div class="social-media twitter">
+        <div class="twiiter-text"><h2>Follow us on Twitter</h2></div>
+        <div class="twitter-image"><a href="./construction.html"><img id="twitter-pic" src="../assets/images/twitter.png"> </a></div>
+    </div>
+    <div class="social-media instagram">
+        <div class="instagram-text"><h2>Follow us on Instagram</h2></div>
+        <div class="instagram-image"><a href="./construction.html"><img id="insta-pic" src="../assets/images/instagram.png" ></a></div>
+    </div>
+    <div class="social-media linkedin">
+        <div class="linkedin-text"><h2>Follow us on LinkedIn</h2></div>
+        <div class="linkedin-image"> <a href="./construction.html"><img id="linked-pic" src="../assets/images/linkedin.png"></a></div>
+    </div>
+</div>
+
+<br />
+<footer class="footer"> ©Copyright Michael Macgregor 2023 | Images used are in collaboration with open and free source software. Please note: Awards and details are fictional for the purpose of study material.</footer>
+<br />
+    
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The League of Extraordinary Coders</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+     
+/* starting chunk CSS*/
+.container{
+    margin: 0px 10px 0px 10px;
+}
+.opening-para{
+    grid-area: 2/2/3/3;
+}
+
+.picture-one {
+    grid-area: 2/1/3/2;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.picture-two {
+    grid-area: 2/3/3/4;
+    display: flex;
+    margin-right: 20px;
+   
+}
+.bottom-left{
+    grid-area: 3/1/4/2;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start
+}
+.bottom-right {
+    grid-area: 3/3/4/4;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+#coders-pic, #source-pic{
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  box-shadow: 2px 2px 30px;
+  border-radius: 30px;
+}
+.home {
+    text-align: center;
+}
+.title.home, .para-one.home  {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Second Line section lets have */
+.home2 {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 80px 2fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 50px; margin-left: 20px; margin-right: 20px;
+    max-height: 500px;
+    max-width: 1390px;
+}
+.title-left, .title-center, .title-right{
+    background-color: #393646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+
+.home2 > .title-left{
+grid-area: 1/1/2/2;
+}
+
+.home2 > .title-center {
+grid-area: 1/2/2/3;
+}
+
+.home2 > .title-right {
+grid-area: 1/3/2/4;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.flex-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #393646;
+}
+
+.flex-item1{
+    flex: 100%;
+    padding-top: 40px;
+}
+.flex-item2, .flex-item3 {
+    padding-top: 20px;
+}
+
+.league-news {
+    grid-area: 2/1/4/2;
+}
+
+.flex-item-mid1{
+    background-color: #5A96E3
+}
+
+.flex-item-mid2{
+    background-color: #5A96E3;
+
+}
+.flex-item-mid3{
+    background-color: #5A96E3;
+
+}
+.flex-item-mid4 {
+    grid-area: 3/2/4/3;
+}
+
+.recent-reviews {
+    flex-direction: column;
+    grid-area: 2/3/4/4;
+    overflow: hidden;
+}
+.reviews {
+    background-color: lemonchiffon;
+    color:#5A96E3;
+}
+
+/* Social media */
+.social-container{
+      margin-top: 200px;
+      
+    }
+
+    @media (max-width:980px) {
+    .home2{
+    font-size: 10px;
+    }
+   .league-news > div.flex-item > p > a,h3
+    {
+        font-size: 10px;
+    }
+
+    .flex-item1 , .flex-item2, .flex-item3 {
+    padding-top: 0px;
+    }
+    .social-container {
+    margin-top: 100px;
+    }
+    }
+    
+    @media (min-width:430px) and (max-width:600px) {
+        .social-container {
+            flex-direction: column;
+            margin-top: 300px;
+        }
+        .title-left, .title-center, .title-right{
+    font-size: 10px;
+    }
+    }
+    @media (max-width:429px) {
+        .social-container {
+            flex-direction: column;
+            margin-top: 600px;
+        }
+        .title-left, .title-center, .title-right{
+    font-size: 8px;
+    }
+  
+}
+
+    </style>
+</head>
+<body>
+    <!-- Home bar -->
+    <div class="home-bar">
+        <navbar>
+            <ul class="nav-list">
+                <li class="nav-items"> <a href="./index.html"><img id="small-logo" src="./assets/images/logo.png" ></a></li>
+                <li class="nav-items"><a href="./index.html">Welcome to the League</a></li>
+                <li class="nav-items"><a href="./public/contact.html">Contact the League</a></li>
+                <li class="nav-items"><a href="./public/about.html">About the League</a></li>
+                <li class="nav-items"><a href="./public/portfolio.html">Portfolio</a></li>
+                <li class="nav-items"><a href="./public/join.html">Join the League</a> </li>
+            </ul>
+        </navbar>
+    </div>    
+    <br />
+    <!-- happy with above nav bar-->
+    
+    <div class="container opener">
+        <div class="opening-para">
+                <h1 class="title home"> Welcome to the League of Extraordinary Coders</h1>
+                <p class="para-one home"> Dedicated to <span class="standout">CREATE</span>, <span class="standout">DEVELOP</span> and <span class="standout">GUIDE</span> you through the vast unknown and ever changing universe that is web development</p>
+                <p class="para-two home"> Where your website is in the hands of some of the best developers in the world ... and beyond!!</p> </div>
+        <div class="picture-one"><img id="coders-pic" src="./assets/images/coders.jpg"></div>
+        <div class="picture-two"><img id="source-pic" src="./assets/images/source-code.jpg"></div>
+        <div class="bottom-left"><h2>Innovate</h2></div>
+        <div class="bottom-right"><h2>Create</h2></div>
+    </div>
+    <!-- this seems good-->
+
+     <div class="container home2">
+        <div class="item title-left"><h1>League News</h1></div>
+        <div class="item title-center"><h1>What are The League's Current Projects?</div>
+        <div class="item title-right"><h1>Our Latest Reviews</h1></div>
+        
+        <div class="grid-item flex-container league-news"> 
+            <div class="flex-item flex-item1">
+                <h2>The League has just started out! </h2> 
+                <p>Now we are actively recruiting for talented coders to join our ranks. If you are interested please jump over to the Join the league section below <a href="./public/join.html">Join The League</a></p>
+            </div>
+            <div class="flex-item flex-item2"> 
+                <h3>We are actively looking for new projects and new clients. </h3> 
+                <p>Please visit <a href="./public/contact.html">Contact the League</a> for more information. </p> 
+            </div>
+            <div class="flex-item flex-item3"> 
+                <p>If you would need some help with your design or just general information. Once again please feel free to contact the league</p> 
+                <a href="./public/contact.html"><h3>Contact the league</h3></a></div>
+        </div>
+
+        <div class="grid-item flex-container current-projects"> 
+            <div class="flex-item flex-item-mid1">
+                <h2>Creating the League Website</h2>
+                <p>Our current mission is to establish a fully functional website that is actively being updated with coding knowledge learnt throughout the development of the league.</p>
+                <p>This is our main project of concern at the moment as league members are constantly developing their skills.</p>
+            </div>
+            <div class="flex-item flex-item-mid2">
+                <h2>Making Mock Websites</h2>
+                <p>What to do when you currently have an empty portfolio?</p>
+                <p>Well one thing to do is to make mock websites! Websites essentially for real life businesses but you are doing this for free.</p>
+                <h3>Once you have a portfolio then you can expand into the business sector</h3>
+            </div>
+            <div class="flex-item flex-item-mid3">
+                <h2>First Project (Mock) Creating a website for a restaurant</h2>
+                <p>This will have a booking system, a table layout and ways to reserve tables and see which tables are free, all through the website.</p>
+            </div>
+        </div>
+
+        <div class="flex-item flex-item-mid4">
+            <p> For latest updates on our projects or just if you want to browse visit the portfolio section</p>
+            <a href="./public/portfolio.html"><h2>Current Projects and Portfolio</h2></a>
+        </div>
+
+        <div class="grid-item flex-container recent-reviews"> 
+            <div class="flex-item reviews review2">
+                <h2>01/01/2023 - Future User</h2>
+                <p> Looking forward to working with the league</p>
+            </div>
+            <div class="flex-item reviews review3">
+                <h2>01/01/2023 - Future User</h2>
+                <p> Looking forward to working with the league</p>
+            </div>
+            <div class="flex-item reviews review4">
+                <h2>01/01/2023 - Future User</h2>
+                <p> Looking forward to working with the league</p>
+            </div>
+            <div class="flex-item reviews review5">
+                <h2>01/01/2023 - Future User</h2>
+                <p> Looking forward to working with the league</p>
+            </div>
+        </div>
+        
+    </div>
+
+        <!-- Social Media container-->
+        
+        <div class="social-container">
+            <div class="social-media twitter">
+                <div class="twiiter-text"><h2>Follow us on Twitter</h2></div>
+                <div class="twitter-image"><a href="./public/construction.html"><img id="twitter-pic" src="./assets/images/twitter.png"> </a></div>
+            </div>
+            <div class="social-media instagram">
+                <div class="instagram-text"><h2>Follow us on Instagram</h2></div>
+                <div class="instagram-image"><a href="./public/construction.html"><img id="insta-pic" src="./assets/images/instagram.png" ></a></div>
+            </div>
+            <div class="social-media linkedin">
+                <div class="linkedin-text"><h2>Follow us on LinkedIn</h2></div>
+                <div class="linkedin-image"> <a href="./public/construction.html"><img id="linked-pic" src="./assets/images/linkedin.png"></a></div>
+            </div>
+        </div>
+            <br />
+            <footer class="footer"> ©Copyright Michael Macgregor 2023 | Images used are in collaboration with open and free source software. Please note: Awards and details are fictional for the purpose of study material.</footer>
+            <br />
+</html>
+    
+
